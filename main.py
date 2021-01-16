@@ -1,12 +1,6 @@
 import schedule, sqlite3, threading, time, psutil, os, sys, datetime
 from pynotifier import Notification
 
-try:
-    from PyQt5.QtWinExtras import QtWin
-    myappid = 'darkmode.python.scheudule.program'
-    QtWin.setCurrentProcessExplicitAppUserModelID(myappid)    
-except ImportError:
-    pass
 
 def resource_path(relative_path):
     """is used for pyinstaller so it can read the relative path"""
